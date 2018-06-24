@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bloob</title>
+    <link rel="stylesheet" href="src/css/bulma.min.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="src/js/firebase.js"></script>
+    <script src="src/js/bloob.js"></script>
+</head>
+
+<body>
+    <section class="hero is-fullheight is-medium is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <article class="card is-rounded">
+                        <div id="loading" class="has-text-centered">Carregando...</div>
+                        <div class="card-content" id="setUserLogin" style="display: none;">
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" type="email" placeholder="email" id="email">
+                                </div>
+                            </div>
+                            
+                            <div class="field">
+                                    <div class="control">
+                                    <input class="input" type="password" placeholder="password" id="password">
+                                </div>
+                            </div>
+                            <button class="button is-primary" id="actionBtn" name="login">Login</button>
+                            <button class="button is-primary" id="actionBtn" name="register">Registre-se</button>
+                        </div>
+                        <div class="card-content" id="setServerDetails" style="display: none;">
+                            <p>
+                                <small>
+                                    Antes de executar o projeto, informe IP e Porta do seu servidor<br>
+                                    Quando iniciado, deverá aparecer no seguinte formato:
+                                </small>
+                            </p>
+                            <p class="has-text-centered">
+                                <span class="tag is-dark">* Running on http://<strong>IP</strong>:<strong>PORTA</strong>/ (Press CTRL+C to quit)</span>
+                            </p>
+                            <br>
+                            <div class="field">
+                                <div class="control">
+                                    <input class="input" type="text" placeholder="IP" id="inputIp">
+                                </div>
+                            </div>
+                            
+                            <div class="field">
+                                    <div class="control">
+                                    <input class="input" type="text" placeholder="PORTA" id="inputPort">
+                                </div>
+                            </div>
+                            <button class="button is-primary is-medium is-fullwidth" id="setIpAndPort">Validar</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

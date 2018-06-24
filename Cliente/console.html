@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bloob</title>
+    <link rel="stylesheet" href="src/css/bulma.min.css">
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="src/js/firebase.js"></script>
+    <script src="src/js/console.js"></script>
+</head>
+
+<body>
+    <section class="hero is-fullheight is-medium is-primary is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-centered">
+                    <article class="card is-rounded">
+                        <div class="card-content">
+                            <p>Bem vindo ao Bloob, clique em um botão para requistar um dado: </p>
+
+                            <h2 id="dado">dado</h2>
+
+                            <br>
+                            <button class="button is-primary is-medium" id="getTemperatura">Temperatura</button>
+                            <button class="button is-primary is-medium" id="getAgua">Nível da água</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
